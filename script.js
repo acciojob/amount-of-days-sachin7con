@@ -3,7 +3,7 @@
 var noOfDays = function (yr){
  	var isleap = 355;
 	var dif = 2024 - yr ;
-	if (dif%4==0) {
+	if ((yr%4==0 && yr % 100 !== 0) || yr % 400 === 0)) {
 		isleap = 366;
 	} else {
 		isleap = 365;
